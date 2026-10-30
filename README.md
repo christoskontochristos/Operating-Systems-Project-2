@@ -98,7 +98,7 @@ This project explores practical operating-system concepts, particularly:
 - Understanding the challenges of parallel execution.
 
 
-
+```mermaid
 flowchart TD
     M["Main Process<br/>(Coordinator)"]
 
@@ -139,12 +139,4 @@ flowchart TD
     class S0,S1,S2 splitter
     class A,B,C,D,E,F sorter
     class R result
-
-
-
-
-
-
-
-
-
+```
