@@ -99,6 +99,50 @@ This project explores practical operating-system concepts, particularly:
 
 
 
+flowchart TD
+    M["Main Process<br/>(Coordinator)"]
+
+    M --> S0["Splitter 0"]
+    M --> S1["Splitter 1"]
+    M --> S2["Splitter 2"]
+
+    S0 --> A["Sorter 0"]
+    S0 --> B["Sorter 1"]
+    S0 --> C["Sorter 2"]
+
+    S1 --> D["Sorter 0"]
+    S1 --> E["Sorter 1"]
+
+    S2 --> F["Sorter 0"]
+
+    A -. "Sorted results" .-> S0
+    B -. "Sorted results" .-> S0
+    C -. "Sorted results" .-> S0
+
+    D -. "Sorted results" .-> S1
+    E -. "Sorted results" .-> S1
+
+    F -. "Sorted results" .-> S2
+
+    S0 -. "Merged results" .-> M
+    S1 -. "Merged results" .-> M
+    S2 -. "Merged results" .-> M
+
+    M --> R["Final Sorted Output"]
+
+    classDef main fill:#1d4ed8,color:#fff,stroke:#1e40af
+    classDef splitter fill:#0f766e,color:#fff,stroke:#115e59
+    classDef sorter fill:#64748b,color:#fff,stroke:#475569
+    classDef result fill:#15803d,color:#fff,stroke:#166534
+
+    class M main
+    class S0,S1,S2 splitter
+    class A,B,C,D,E,F sorter
+    class R result
+
+
+
+
 
 
 
