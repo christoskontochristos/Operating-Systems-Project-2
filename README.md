@@ -53,7 +53,7 @@ flowchart TD
     S1 -. "Merged results" .-> M
     S2 -. "Merged results" .-> M
 
-    M --> R["Final Sorted Output"]
+    M -->. "Merge results" .-->R["Final Sorted Output"]
 
     classDef main fill:#1d4ed8,color:#fff,stroke:#1e40af
     classDef splitter fill:#0f766e,color:#fff,stroke:#115e59
