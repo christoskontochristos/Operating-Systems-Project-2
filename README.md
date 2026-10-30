@@ -21,7 +21,7 @@ Processes communicate using UNIX pipes, while process synchronization is handled
 
 The implementation also handles partial pipe reads and writes to ensure that data is transferred reliably between processes.
 
-## Visual Representation of the Architecture 
+## Visual Representation of the Architecture for k = 3
 
 ```mermaid
 flowchart TD
