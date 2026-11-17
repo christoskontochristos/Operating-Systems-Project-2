@@ -127,7 +127,7 @@ Run the program accordingly:
 e.g.
 
 ```bash
-/final -i voters5000.bin -k 4 -e1 ./sorting1 -e2 ./sorting2
+/final -i ./test_files/voters5000.bin -k 4 -e1 ./sorting_programs/sorting1 -e2 ./sorting_programs/sorting2
 ```
 
 
